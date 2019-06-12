@@ -18,7 +18,7 @@ namespace Wololo2
             return Tuple.Create(id, output);
         }
 
-        static Tuple<string, string> GetDataFromArgs(string[] args)
+        static internal Tuple<string, string> GetDataFromArgs(string[] args)
         {
             
             string id = args[0];
@@ -29,14 +29,14 @@ namespace Wololo2
             
         }
 
-        static string GetDataFromServer(string where)
+        static internal void GetDataFromServer()
         {
-            return where;
+            throw new NotImplementedException();
         }
 
-        static string GetDataFromHardCode(string where)
+        static internal void GetDataFromHardCode()
         {
-            return where;
+            throw new NotImplementedException();
         }
 
 
