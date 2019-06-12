@@ -8,9 +8,10 @@ namespace Wololo2
     {
         class ModItem
         {
-            string CourseName;
-            string ModuleName;
-            string ModuleItemName;
+            public string CourseID {get;set;}
+            public string ModName {get;set;}
+            public string ModItemName {get;set;}
+            public string ModID {get;set;}
         }
 
         static public void LoopProperties(JEnumerable<JObject> jEnum)
@@ -32,24 +33,42 @@ namespace Wololo2
 
             byte counter = 0;
             JArray jArray = JArray.Parse(data);
-            Console.WriteLine(jArray.Count);
 
             var modItems = new List<ModItem>();
+            var modItem = new ModItem();
+            var modName = "";
+            var courseID = "96";
 
-            
             foreach(JObject obj in jArray.Children<JObject>())
                 foreach(JProperty prop in obj.Properties())
                 {
                     if(prop.Name == "name")
-                        modItems.Add(prop.Value.ToString());
+                    {
+                        modName = prop.Value.ToString();
+                    }
                     if(prop.Name == "items")
                         foreach(JObject o in prop.Value.Children<JObject>())
                             foreach(JProperty p in o.Properties())
                                 if(p.Name == "title")
-                                    Console.WriteLine(p.Value);
+                                {
+                                    modItem.CourseID = courseID;
+                                    modItem.ModName = modName;
+                                    modItem.ModItemName = p.Value.ToString();
+                                    modItem.ModID = "Not Implemented";
+                                    modItems.Add(modItem);
+                                    modItem = new ModItem();
+                                }
                     counter++;
                 }
-            
+            foreach(ModItem m in modItems)
+            {
+                Console.WriteLine("{");
+                Console.WriteLine("   CourseID = {0}", m.CourseID);
+                Console.WriteLine("   Module Name = {0}", m.ModName);
+                Console.WriteLine("   Item Name = {0}", m.ModItemName);
+                Console.WriteLine("   Item ID = {0}", m.ModID);
+                Console.WriteLine("}");
+            }
             //LoopProperties(jArray.Children<JObject>());
         }
     }
