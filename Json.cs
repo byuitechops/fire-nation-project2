@@ -14,7 +14,7 @@ namespace Wololo2
             path = "json.json";
         }
 
-        public string Convert()
+        public string Convert(List<dynamic> items)
         {
             string str = "";
             return str;
