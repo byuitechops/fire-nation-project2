@@ -1,3 +1,7 @@
+using System;
+using System.Collections.Generic;
+using Newtonsoft.Json.Linq;
+
 namespace Wololo2
 {
     class Html : IConverter 
@@ -14,6 +18,11 @@ namespace Wololo2
         {
             string str = "";
             return str;
+        }
+
+        public List<dynamic> Format(JArray jArray)
+        {
+            throw new NotImplementedException();
         }
 
         public string GetPath()
