@@ -96,7 +96,7 @@ namespace Wololo
             }
             catch(Exception e)
             {
-                Console.WriteLine("Error sending data to CSV file:");
+                Console.WriteLine("Error sending data to CSV string:");
                 Console.WriteLine(e.Message);
                 throw;
             }
@@ -124,7 +124,7 @@ namespace Wololo
             }
             catch(Exception e)
             {
-                Console.WriteLine("Error sending data to JSON file:");
+                Console.WriteLine("Error sending data to JSON string:");
                 Console.WriteLine(e.Message);
                 throw;
             }

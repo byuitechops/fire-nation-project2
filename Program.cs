@@ -43,34 +43,36 @@ namespace Wololo2
             var modName = "";
             var courseID = "96";
 
-            foreach (JObject obj in jArray.Children<JObject>())
-                foreach (JProperty prop in obj.Properties())
-                {
-                    if (prop.Name == "name")
-                        modName = prop.Value.ToString();
-                    if (prop.Name == "items")
-                        foreach (JObject o in prop.Value.Children<JObject>())
-                            foreach (JProperty p in o.Properties())
-                            {
-                                if (p.Name == "id")
-                                    item.ID = p.Value.ToString();
-                                else if (p.Name == "title")
-                                    item.Name = p.Value.ToString();
-                                else if (p.Name == "type")
-                                    item.Type = p.Value.ToString();
-                                else if (p.Name == "url")
-                                    item.Url = p.Value.ToString();
-                                else if (p.Name == "published")
-                                {
-                                    item.Published = p.Value.ToString();
-                                    item.CourseID = courseID;
-                                    item.ModName = modName;
-                                    items.Add(item);
-                                    item = new Item();
-                                }
-                            }
-                }
+            var myModObj = new JObject();
+            var myItemObj = new JObject();
 
+            foreach (JObject obj in jArray.Children<JObject>())
+            {
+                //Console.WriteLine((string)obj.SelectToken("name"));
+                myModObj = new JObject();
+                myModObj.Add(new JProperty("name", obj.SelectToken("name")));
+                
+                foreach (JObject o in obj.SelectToken("items").Children<JObject>())
+                {
+                    item.ID = o.SelectToken("id").ToString();
+                    item.Name = o.SelectToken("title").ToString();
+                    item.Type = o.SelectToken("type").ToString();
+                    try
+                    {
+                        item.Url = o.SelectToken("url").ToString();
+                    }
+                    catch (Exception e)
+                    {
+                        try{item.Url = o.SelectToken("external_url").ToString();}
+                        catch(Exception e2){item.Url = "null";}
+                    }
+                    item.Published = o.SelectToken("published").ToString();
+                    items.Add(item);
+                    item = new Item();
+                }
+            }
+                
+            
             return items;
         }
     }
