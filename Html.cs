@@ -1,11 +1,11 @@
 namespace Wololo2
 {
-    class HtmlClass : IConverter 
+    class Html : IConverter 
     {
         string data;
         readonly string path; 
 
-        HtmlClass()
+        Html()
         {
             path = "html.html";
         }

@@ -1,11 +1,11 @@
 namespace Wololo2
 {
-    class Html : IConverter 
+    class Json : IConverter 
     {
         string data;
         readonly string path; 
 
-        Html()
+        Json()
         {
             path = "json.json";
         }
