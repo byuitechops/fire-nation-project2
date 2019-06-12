@@ -1,15 +1,12 @@
+using System;
 using System.Threading.Tasks;
 
 namespace Wololo2
 {
-    class Input
+    static class Input
     {
-        Input()
-        {
-            
-        }
         
-        static Tuple<string, string> GetDataFromConsole()
+        static internal Tuple<string, string> GetDataFromConsole()
         {
             Console.WriteLine("Please enter a course ID:"); 
             string id = System.Console.ReadLine();
@@ -21,7 +18,7 @@ namespace Wololo2
             return Tuple.Create(id, output);
         }
 
-        static Tuple<string> GetDataFromArgs(string[] args)
+        static Tuple<string, string> GetDataFromArgs(string[] args)
         {
             
             string id = args[0];
@@ -32,14 +29,14 @@ namespace Wololo2
             
         }
 
-        Task<string> GetDataFromServer(string where)
+        static string GetDataFromServer(string where)
         {
-
+            return where;
         }
 
-        Task<string> GetDataFromHardCode(string where)
+        static string GetDataFromHardCode(string where)
         {
-
+            return where;
         }
 
 

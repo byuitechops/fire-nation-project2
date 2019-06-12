@@ -60,15 +60,15 @@ namespace Wololo2
                                 }
                     counter++;
                 }
-            foreach(ModItem m in modItems)
-            {
-                Console.WriteLine("{");
-                Console.WriteLine("   CourseID = {0}", m.CourseID);
-                Console.WriteLine("   Module Name = {0}", m.ModName);
-                Console.WriteLine("   Item Name = {0}", m.ModItemName);
-                Console.WriteLine("   Item ID = {0}", m.ModID);
-                Console.WriteLine("}");
-            }
+            // foreach(ModItem m in modItems)
+            // {
+            //     Console.WriteLine("{");
+            //     Console.WriteLine("   CourseID = {0}", m.CourseID);
+            //     Console.WriteLine("   Module Name = {0}", m.ModName);
+            //     Console.WriteLine("   Item Name = {0}", m.ModItemName);
+            //     Console.WriteLine("   Item ID = {0}", m.ModID);
+            //     Console.WriteLine("}");
+            // }
             //LoopProperties(jArray.Children<JObject>());
         }
     }
