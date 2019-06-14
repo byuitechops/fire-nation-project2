@@ -48,8 +48,9 @@ namespace Wololo2
                     }
                     catch (Exception e)
                     {
+                        var x=e; // Just to get rid of warnings
                         try{item.Url = o.SelectToken("external_url").ToString();}
-                        catch(Exception e2){item.Url = "null";}
+                        catch(Exception e2){var z=e2; item.Url = "null";}
                     }
                     item.Published = o.SelectToken("published").ToString();
                     myItemArr.Add(JObject.FromObject(item));
@@ -57,7 +58,7 @@ namespace Wololo2
                 }
                 
                 myModObj.Add(new JProperty("name", obj.SelectToken("name")));
-                myModObj.Add(new JProperty("itmes", myItemArr));
+                myModObj.Add(new JProperty("items", myItemArr));
                 myModArr.Add(myModObj);
 
                 myModObj = new JObject();

@@ -8,7 +8,6 @@ namespace Wololo2
 {
     class Html : IConverter
     {
-        string data;
         readonly string path;
 
         public Html()
@@ -18,8 +17,6 @@ namespace Wololo2
 
         public string Parse(JArray course)
         {
-            string currID = "";
-
             string courseID = (string)course.First.SelectToken("name");
 
             string html = "<body><h1>Module Items for course " + courseID + "</h1><div class=\"report\">";

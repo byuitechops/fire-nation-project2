@@ -9,7 +9,6 @@ namespace Wololo2
 {
     internal class Csv : IConverter 
     {
-        string data;
         readonly string path; 
 
         public Csv()
@@ -41,8 +40,9 @@ namespace Wololo2
                     }
                     catch (Exception e)
                     {
+                        var z=e; // Just to get rid of warnings
                         try{item.Url = o.SelectToken("external_url").ToString();}
-                        catch(Exception e2){item.Url = "null";}
+                        catch(Exception e2){var x=e2; item.Url = "null";}
                     }
                     item.Published = o.SelectToken("published").ToString();
                     items.Add(item);
