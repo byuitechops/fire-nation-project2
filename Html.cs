@@ -16,7 +16,7 @@ namespace Wololo2
             path = "html.html";
         }
 
-        public string Convert(JArray course)
+        public string Parse(JArray course)
         {
             string currID = "";
 
@@ -73,20 +73,7 @@ namespace Wololo2
             readHTML += html;
 
             //Console.WriteLine(readHTML);
-
-            string report = "./report.html";
-
-            File.WriteAllText(report, readHTML, Encoding.UTF8);
-
-
-
-            string str = report;
-            return str;
-        }
-
-        public JArray Format(JArray jArray)
-        {
-            throw new NotImplementedException();
+            return readHTML;
         }
 
         public string GetPath()
