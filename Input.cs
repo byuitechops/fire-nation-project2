@@ -47,11 +47,6 @@ namespace Wololo2
             return Tuple.Create(id, output);
         }
 
-        static internal void GetDataFromServer()
-        {
-            throw new NotImplementedException();
-        }
-
         static internal Tuple<string, string> GetDataFromHardCode()
         {
             return Tuple.Create("96", "csv");
