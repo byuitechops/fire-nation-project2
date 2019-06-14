@@ -17,14 +17,14 @@ namespace Wololo2
             path = "csv.csv";
         }
 
-        public string Convert(JArray items)
+        public string ToString(JArray items)
         {
             var converter = new Converter();
             converter.jArray = items;
             return converter.CsvStringOut();
         }
 
-        public JArray Format(JArray jArray)
+        public JArray Parse(JArray jArray)
         {
             var items = new List<Item>();
             var item = new Item();

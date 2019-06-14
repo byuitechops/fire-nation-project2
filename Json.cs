@@ -16,12 +16,12 @@ namespace Wololo2
             path = "json.json";
         }
 
-        public string Convert(JArray json)
+        public string ToString(JArray json)
         {
             return JsonConvert.SerializeObject(json.First);
         }
 
-        public JArray Format(JArray jArray)
+        public JArray Parse(JArray jArray)
         {
             var item = new Item();
 

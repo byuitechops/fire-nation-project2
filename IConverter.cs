@@ -4,8 +4,8 @@ namespace Wololo2
 {
     interface IConverter
     {
-         string Convert(JArray items);
-         JArray Format(JArray jArray);
+         string ToString(JArray items);
+         JArray Parse(JArray jArray);
          void WriteFile(string data);
     }
 }
