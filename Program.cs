@@ -31,7 +31,6 @@ namespace Wololo2
             var converter = new Converter();
             converter.jArray = items;
             converter.JsonOut("json.json");
-            converter.CsvOut("csv.csv");
             //LoopProperties(jArray.Children<JObject>());
         }
 
