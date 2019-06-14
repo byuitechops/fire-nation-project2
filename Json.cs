@@ -14,13 +14,13 @@ namespace Wololo2
             path = "json.json";
         }
 
-        public string Convert(List<dynamic> items)
+        public string Convert(JArray items)
         {
             string str = "";
             return str;
         }
 
-        public List<dynamic> Format(JArray jArray)
+        public JArray Format(JArray jArray)
         {
             throw new NotImplementedException();
         }

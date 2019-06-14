@@ -14,14 +14,14 @@ namespace Wololo2
             path = "csv.csv";
         }
 
-        public string Convert(List<dynamic> items)
+        public string Convert(JArray items)
         {
             var converter = new Converter();
-            converter.ObjectIn(items);
+            converter.jArray = items;
             return converter.CsvStringOut();
         }
 
-        public List<dynamic> Format(JArray jArray)
+        public JArray Format(JArray jArray)
         {
             var items = new List<dynamic>();
             var item = new Item();
@@ -56,7 +56,7 @@ namespace Wololo2
                                 }
                             }
                 }
-            return items;
+            return new JArray();
         }
 
         public string GetPath()

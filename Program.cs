@@ -26,34 +26,34 @@ namespace Wololo2
 
             JArray jArray = JArray.Parse(data);
 
-            List<dynamic> items = Format(jArray);
+            JArray items = Format(jArray);
 
             var converter = new Converter();
-            converter.ObjectIn(items);
+            converter.jArray = items;
             converter.JsonOut("json.json");
             converter.CsvOut("csv.csv");
             //LoopProperties(jArray.Children<JObject>());
         }
 
-        private static List<dynamic> Format(JArray jArray)
+        private static JArray Format(JArray jArray)
         {
-            var items = new List<dynamic>();
             var item = new Item();
 
             var modName = "";
             var courseID = "96";
 
-            var myModObj = new JObject();
-            var myItemObj = new JObject();
+            JArray myModArr = new JArray();
+            JObject myModObj = new JObject();
+            JArray myItemArr = new JArray();
 
             foreach (JObject obj in jArray.Children<JObject>())
             {
                 //Console.WriteLine((string)obj.SelectToken("name"));
-                myModObj = new JObject();
-                myModObj.Add(new JProperty("name", obj.SelectToken("name")));
-                
+                modName = (string)obj.SelectToken("name");
                 foreach (JObject o in obj.SelectToken("items").Children<JObject>())
                 {
+                    item.CourseID = courseID;
+                    item.ModName = modName;
                     item.ID = o.SelectToken("id").ToString();
                     item.Name = o.SelectToken("title").ToString();
                     item.Type = o.SelectToken("type").ToString();
@@ -67,13 +67,27 @@ namespace Wololo2
                         catch(Exception e2){item.Url = "null";}
                     }
                     item.Published = o.SelectToken("published").ToString();
-                    items.Add(item);
+                    myItemArr.Add(JObject.FromObject(item));
                     item = new Item();
                 }
-            }
                 
+                myModObj.Add(new JProperty("name", obj.SelectToken("name")));
+                myModObj.Add(new JProperty("itmes", myItemArr));
+                myModArr.Add(myModObj);
+                Console.WriteLine(myModArr);
+
+                myModObj = new JObject();
+                myItemArr = new JArray();
+            }
             
-            return items;
+            JArray courseArr = new JArray();
+            JObject courseObj = new JObject();
+
+            courseObj.Add(new JProperty("name", courseID));
+            courseObj.Add(new JProperty("modules", myModArr));
+            courseArr.Add(courseObj);
+            
+            return courseArr;
         }
     }
 }

@@ -5,8 +5,8 @@ namespace Wololo2
 {
     interface IConverter
     {
-         string Convert(List<dynamic> items);
-         List<dynamic> Format(JArray jArray);
+         string Convert(JArray items);
+         JArray Format(JArray jArray);
          string GetPath();
     }
 }
