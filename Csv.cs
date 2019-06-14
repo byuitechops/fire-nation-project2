@@ -13,7 +13,7 @@ namespace Wololo2
 
         public Csv()
         {
-            path = "csv.csv";
+            path = "report.csv";
         }
 
         public string Parse(JArray jArray)

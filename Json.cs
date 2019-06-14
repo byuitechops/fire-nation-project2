@@ -12,7 +12,7 @@ namespace Wololo2
 
         public Json()
         {
-            path = "json.json";
+            path = "report.json";
         }
 
         public string ToString(JArray json)
