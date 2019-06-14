@@ -11,26 +11,18 @@ namespace Wololo2
     {
         static void Main(string[] args)
         {
-            Tuple<string, string> tuple = Input.GetDataFromFile("config.txt");
-
-            IData httpGet = new HttpGet(); // Dependancy inject
-            string data = httpGet.GetData(tuple.Item1).Result; // Implement better params
-
-            IConverter converter = new Json(); // Dependancy inject
-            JArray moreData = JArray.Parse(data); // Put into some feature???
-            data = doConvert(converter, moreData);
-            WriteFile(data, converter);
-        }
-
-        static string Prompt(string str)
-        {
-            Console.WriteLine(str);
-            return Console.ReadLine();
-        }
-
-        static string doConvert(IConverter obj, JArray data)
-        {
-            return obj.Parse(data);
+            // Get input
+            Tuple<string, string> inputs = Input.GetDataFromFile("config.txt");
+            // Run startup
+            Tuple<IData, IConverter> objs = Injector.Startup(inputs);
+            // Get Canvas Json
+            string canvasData = objs.Item1.GetData(inputs.Item1).Result; //Smelly
+            // Parse to JThing
+            JArray moreData = JArray.Parse(canvasData);
+            // Convert back to string
+            string convertedData = objs.Item2.Parse(moreData);
+            // Write it to a file
+            WriteFile(convertedData, objs.Item2);
         }
 
         public static void WriteFile(string data, IConverter obj)
