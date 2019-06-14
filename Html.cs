@@ -6,7 +6,7 @@ using Newtonsoft.Json.Linq;
 
 namespace Wololo2
 {
-    internal class Html : IConverter
+    class Html : IConverter
     {
         string data;
         readonly string path;
@@ -16,7 +16,7 @@ namespace Wololo2
             path = "html.html";
         }
 
-        public string Parse(JArray course)
+        public string Convert(JArray course)
         {
             string currID = "";
 
@@ -27,11 +27,7 @@ namespace Wololo2
             foreach (var module in course.First.SelectToken("modules"))
             {
                 string modName = (string)module.SelectToken("name");
-                html += "<div class=\"card\" style=\"width: 50rem;\"><div class=\"card-header\">" + modName + "</div><ul class=\"list-group list-group-flush\">";
-
-                //Console.WriteLine(module);
-
-
+                html += $"<div class=\"card\" style=\"width: 50rem;\"><div class=\"card-header\">{modName}</div><ul class=\"list-group list-group-flush\">";
 
                 JArray items = (JArray)module.SelectToken("items");
                 foreach (var item in items.Children<JObject>())
@@ -43,23 +39,23 @@ namespace Wololo2
                     string type = (string)item.SelectToken("Type");
                     string published = (string)item.SelectToken("Published");
                     string url = (string)item.SelectToken("Url");
-                    string pub = "style=\"color: black\"";
-                    string subStyle = "style=\"background-color: white\"";
+                    string pub = "";
+                    string subStyle = "";
                     if (type == "ExternalUrl") type = "send";
                     if (type == "File") type = "file_copy";
                     if (type == "Discussion") type = "forum";
                     if (type == "Quiz") type = "help";
                     if (type == "Assignment") type = "assignment";
                     if (type == "Page") type = "receipt";
-                    if (type == "SubHeader") subStyle = "style=\"background-color: #a3a3a3\"";
+                    if (type == "SubHeader") subStyle = "subheader";
                     if (type == "SubHeader") type="" ;
                     if (url == "") url = "#";
                     if (published == "True")
                     {
-                        pub = "style=\"color: green\"";
+                        pub = "published";
                         //Console.WriteLine(pub);
                     }
-                    html += "<li class=\"list-group-item\"" + subStyle +"><a href=\"" + url + "\" target=\"_blank\">" + name + "</a><span id=\"type\"" + pub + ">" + "<i class=\"material-icons\">" + type + "</i></span></li>\n";
+                    html += $"<li class=\"list-group-item {subStyle}\"><a href=\"{url}\">{name}<i class=\"material-icons {pub}\">{type}</i></a></li>\n";
                 }
 
                 html += "</ul></div>";
@@ -82,8 +78,15 @@ namespace Wololo2
 
             File.WriteAllText(report, readHTML, Encoding.UTF8);
 
+
+
             string str = report;
             return str;
+        }
+
+        public JArray Format(JArray jArray)
+        {
+            throw new NotImplementedException();
         }
 
         public string GetPath()
