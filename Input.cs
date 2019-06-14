@@ -36,11 +36,10 @@ namespace Wololo2
             string output = file.ReadLine();
 
             /* example textfile
-            ```
+            <<BEGINNING OF FILE>>
             98
             csv
-            # anything hereafter is ignored #
-            ```
+            <<END OF FILE>>
              */
 
             file.Close();
