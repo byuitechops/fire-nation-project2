@@ -24,6 +24,7 @@ namespace Wololo2
         {
             var item = new Item();
 
+            var modID = "";
             var modName = "";
             var courseID = "96";
 
@@ -35,10 +36,12 @@ namespace Wololo2
             {
                 //Console.WriteLine((string)obj.SelectToken("name"));
                 modName = (string)obj.SelectToken("name");
+                modID = (string)obj.SelectToken("id");
                 foreach (JObject o in obj.SelectToken("items").Children<JObject>())
                 {
                     item.CourseID = courseID;
                     item.ModName = modName;
+                    item.ModuleID = modID;
                     item.ID = o.SelectToken("id").ToString();
                     item.Name = o.SelectToken("title").ToString();
                     item.Type = o.SelectToken("type").ToString();

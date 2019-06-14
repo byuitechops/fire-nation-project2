@@ -21,16 +21,19 @@ namespace Wololo2
             var items = new List<Item>();
             var item = new Item();
 
+            var modID = "";
             var modName = "";
             var courseID = "96";
 
             foreach (JObject obj in jArray.Children<JObject>())
             {
                 modName = (string)obj.SelectToken("name");
+                modID = (string)obj.SelectToken("id");
                 foreach (JObject o in obj.SelectToken("items").Children<JObject>())
                 {
                     item.CourseID = courseID;
                     item.ModName = modName;
+                    item.ModuleID = modID;
                     item.ID = o.SelectToken("id").ToString();
                     item.Name = o.SelectToken("title").ToString();
                     item.Type = o.SelectToken("type").ToString();
@@ -53,8 +56,9 @@ namespace Wololo2
             JArray jArr = new JArray(); 
             foreach(Item i in items)
             {
-                jArr.Add(i);
+                jArr.Add(JObject.FromObject(i));
             }
+
 
             var converter = new Converter();
             converter.jArray = jArr;
