@@ -5,7 +5,7 @@ namespace Wololo2
 {
     class Injector
     {
-        static internal List<dynamic> Startup(Tuple<string, string> input)
+        static internal Tuple<IData, IConverter> Startup(Tuple<string, string> input)
         {
             IData getter = new HttpGet();
             IConverter setter;
@@ -22,6 +22,8 @@ namespace Wololo2
             {
                 setter = new Html();
             }
+            
+            return Tuple.Create(getter, setter);
         }
     }
 }
