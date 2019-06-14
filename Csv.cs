@@ -7,7 +7,7 @@ using Wololo;
 
 namespace Wololo2
 {
-    class Csv : IConverter 
+    internal class Csv : IConverter 
     {
         string data;
         readonly string path; 
@@ -64,6 +64,11 @@ namespace Wololo2
         public void WriteFile(string data)
         {
             File.WriteAllText(path, data, Encoding.UTF8);
+        }
+
+        public string GetPath()
+        {
+            return path;
         }
     }
 }

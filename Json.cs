@@ -6,12 +6,11 @@ using Newtonsoft.Json.Linq;
 
 namespace Wololo2
 {
-    class Json : IConverter 
+    internal class Json : IConverter 
     {
-        string data;
         readonly string path; 
 
-        Json()
+        public Json()
         {
             path = "json.json";
         }
@@ -60,7 +59,6 @@ namespace Wololo2
                 myModObj.Add(new JProperty("name", obj.SelectToken("name")));
                 myModObj.Add(new JProperty("itmes", myItemArr));
                 myModArr.Add(myModObj);
-                Console.WriteLine(myModArr);
 
                 myModObj = new JObject();
                 myItemArr = new JArray();
@@ -79,6 +77,11 @@ namespace Wololo2
         public void WriteFile(string data)
         {
             File.WriteAllText(path, data, Encoding.UTF8);
+        }
+        
+        public string GetPath()
+        {
+            return path;
         }
     }
 

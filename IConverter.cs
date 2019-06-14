@@ -5,5 +5,6 @@ namespace Wololo2
     interface IConverter
     {
         string Parse(JArray jArray);
+        string GetPath();
     }
 }

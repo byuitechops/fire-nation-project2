@@ -6,7 +6,7 @@ using Newtonsoft.Json.Linq;
 
 namespace Wololo2
 {
-    class Html : IConverter
+    internal class Html : IConverter
     {
         string data;
         readonly string path;
@@ -16,7 +16,7 @@ namespace Wololo2
             path = "html.html";
         }
 
-        public string Convert(JArray course)
+        public string Parse(JArray course)
         {
             string currID = "";
 
@@ -84,11 +84,6 @@ namespace Wololo2
 
             string str = report;
             return str;
-        }
-
-        public JArray Format(JArray jArray)
-        {
-            throw new NotImplementedException();
         }
 
         public string GetPath()
