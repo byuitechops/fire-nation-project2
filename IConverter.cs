@@ -6,6 +6,6 @@ namespace Wololo2
     {
          string Convert(JArray items);
          JArray Format(JArray jArray);
-         string GetPath();
+         void WriteFile(string data);
     }
 }

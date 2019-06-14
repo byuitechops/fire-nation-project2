@@ -1,4 +1,7 @@
 using System;
+using System.IO;
+using System.Text;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
 namespace Wololo2
@@ -13,10 +16,9 @@ namespace Wololo2
             path = "json.json";
         }
 
-        public string Convert(JArray items)
+        public string Convert(JArray json)
         {
-            string str = "";
-            return str;
+            return JsonConvert.SerializeObject(json.First);
         }
 
         public JArray Format(JArray jArray)
@@ -67,16 +69,16 @@ namespace Wololo2
             JArray courseArr = new JArray();
             JObject courseObj = new JObject();
 
-            courseObj.Add(new JProperty("name", courseID));
+            courseObj.Add(new JProperty("courseID", courseID));
             courseObj.Add(new JProperty("modules", myModArr));
             courseArr.Add(courseObj);
             
             return courseArr;
         }
 
-        public string GetPath()
+        public void WriteFile(string data)
         {
-            return path;
+            File.WriteAllText(path, data, Encoding.UTF8);
         }
     }
 

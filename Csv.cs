@@ -1,4 +1,7 @@
+using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Text;
 using Newtonsoft.Json.Linq;
 using Wololo;
 
@@ -23,45 +26,49 @@ namespace Wololo2
 
         public JArray Format(JArray jArray)
         {
-            var items = new List<dynamic>();
+            var items = new List<Item>();
             var item = new Item();
 
             var modName = "";
             var courseID = "96";
 
             foreach (JObject obj in jArray.Children<JObject>())
-                foreach (JProperty prop in obj.Properties())
+            {
+                modName = (string)obj.SelectToken("name");
+                foreach (JObject o in obj.SelectToken("items").Children<JObject>())
                 {
-                    if (prop.Name == "name")
-                        modName = prop.Value.ToString();
-                    if (prop.Name == "items")
-                        foreach (JObject o in prop.Value.Children<JObject>())
-                            foreach (JProperty p in o.Properties())
-                            {
-                                if (p.Name == "id")
-                                    item.ID = p.Value.ToString();
-                                else if (p.Name == "title")
-                                    item.Name = p.Value.ToString();
-                                else if (p.Name == "type")
-                                    item.Type = p.Value.ToString();
-                                else if (p.Name == "url")
-                                    item.Url = p.Value.ToString();
-                                else if (p.Name == "published")
-                                {
-                                    item.Published = p.Value.ToString();
-                                    item.CourseID = courseID;
-                                    item.ModName = modName;
-                                    items.Add(item);
-                                    item = new Item();
-                                }
-                            }
+                    item.CourseID = courseID;
+                    item.ModName = modName;
+                    item.ID = o.SelectToken("id").ToString();
+                    item.Name = o.SelectToken("title").ToString();
+                    item.Type = o.SelectToken("type").ToString();
+                    try
+                    {
+                        item.Url = o.SelectToken("url").ToString();
+                    }
+                    catch (Exception e)
+                    {
+                        try{item.Url = o.SelectToken("external_url").ToString();}
+                        catch(Exception e2){item.Url = "null";}
+                    }
+                    item.Published = o.SelectToken("published").ToString();
+                    items.Add(item);
+                    item = new Item();
                 }
-            return new JArray();
+            }
+
+            JArray jArr = new JArray(); 
+            foreach(Item i in items)
+            {
+                jArr.Add(i);
+            }
+
+            return jArr;
         }
 
-        public string GetPath()
+        public void WriteFile(string data)
         {
-            return path;
+            File.WriteAllText(path, data, Encoding.UTF8);
         }
     }
 }
