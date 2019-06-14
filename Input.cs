@@ -28,6 +28,26 @@ namespace Wololo2
             
         }
 
+        static internal Tuple<string, string> GetDataFromFile(string path)
+        {
+            System.IO.StreamReader file = new System.IO.StreamReader(path);
+
+            string id = file.ReadLine();
+            string output = file.ReadLine();
+
+            /* example textfile
+            ```
+            98
+            csv
+            # anything hereafter is ignored #
+            ```
+             */
+
+            file.Close();
+
+            return Tuple.Create(id, output);
+        }
+
         static internal void GetDataFromServer()
         {
             throw new NotImplementedException();
