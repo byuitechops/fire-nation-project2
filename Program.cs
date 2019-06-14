@@ -11,10 +11,10 @@ namespace Wololo2
     {
         static void Main(string[] args)
         {
-            Input.GetDataFromFile();
+            Tuple<string, string> tuple = Input.GetDataFromFile("config.txt");
 
             IData httpGet = new HttpGet(); // Dependancy inject
-            string data = httpGet.GetData(ID).Result; // Implement better params
+            string data = httpGet.GetData(tuple.Item1).Result; // Implement better params
 
             IConverter converter = new Json(); // Dependancy inject
             JArray moreData = JArray.Parse(data); // Put into some feature???
