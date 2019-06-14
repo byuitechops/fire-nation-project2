@@ -71,7 +71,7 @@ namespace Wololo2
                 }
                 
                 myModObj.Add(new JProperty("name", obj.SelectToken("name")));
-                myModObj.Add(new JProperty("itmes", myItemArr));
+                myModObj.Add(new JProperty("items", myItemArr));
                 myModArr.Add(myModObj);
                 Console.WriteLine(myModArr);
 
