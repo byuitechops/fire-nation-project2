@@ -21,7 +21,7 @@ namespace Wololo2
             return JsonConvert.SerializeObject(json.First);
         }
 
-        public JArray Parse(JArray jArray)
+        public string Parse(JArray jArray)
         {
             var item = new Item();
 
@@ -72,8 +72,8 @@ namespace Wololo2
             courseObj.Add(new JProperty("courseID", courseID));
             courseObj.Add(new JProperty("modules", myModArr));
             courseArr.Add(courseObj);
-            
-            return courseArr;
+
+            return JsonConvert.SerializeObject(courseArr.First);
         }
 
         public void WriteFile(string data)
