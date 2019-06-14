@@ -12,7 +12,7 @@ namespace Wololo2
         string data;
         readonly string path; 
 
-        Csv()
+        public Csv()
         {
             path = "csv.csv";
         }
