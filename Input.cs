@@ -52,9 +52,9 @@ namespace Wololo2
             throw new NotImplementedException();
         }
 
-        static internal void GetDataFromHardCode()
+        static internal Tuple<string, string> GetDataFromHardCode()
         {
-            throw new NotImplementedException();
+            return Tuple.Create("96", "csv");
         }
 
 
