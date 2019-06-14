@@ -1,0 +1,162 @@
+CourseID,ModName,Name,ID,Url,Type,Published,ModuleID
+null,null,Syllabus,12861,https://byui.instructure.com/courses/96/modules/items/12861,receipt,True,971
+null,null,University Policies,12862,https://byui.instructure.com/api/v1/courses/96/module_item_redirect/12862,send,True,971
+null,null,Questions and Conversations,12863,https://byui.instructure.com/courses/96/modules/items/12863,forum,True,971
+null,null,Online Support Center,12864,https://byui.instructure.com/api/v1/courses/96/module_item_redirect/12864,send,True,971
+null,null,Link Test,12865,https://byui.instructure.com/courses/96/modules/items/12865,receipt,True,971
+null,null,General Resources,12866,#,null,False,972
+null,null,General Lesson Notes,12867,https://byui.instructure.com/courses/96/modules/items/12867,receipt,True,972
+null,null,Course Map,12868,https://byui.instructure.com/api/v1/courses/96/module_item_redirect/12868,send,False,972
+null,null,Teaching Group Directory,12869,https://byui.instructure.com/api/v1/courses/96/module_item_redirect/12869,send,False,972
+null,null,Online Instructor Community,12870,https://byui.instructure.com/api/v1/courses/96/module_item_redirect/12870,send,False,972
+null,null,Asking Deep Questions,12871,https://byui.instructure.com/courses/96/modules/items/12871,receipt,True,972
+null,null,Pre-Semester Setup,12872,#,null,False,972
+null,null,Setup For Course Instructor,12873,https://byui.instructure.com/courses/96/modules/items/12873,receipt,True,972
+null,null,Setup Notes for Development Team,12874,https://byui.instructure.com/courses/96/modules/items/12874,receipt,True,972
+null,null,Course Maintenance,12875,#,null,False,972
+null,null,Course Fixes and Improvements,12876,https://byui.instructure.com/api/v1/courses/96/module_item_redirect/12876,send,False,972
+null,null,Course Maintenance Log,12877,https://byui.instructure.com/courses/96/modules/items/12877,receipt,True,972
+null,null,Release Notes,12878,https://byui.instructure.com/courses/96/modules/items/12878,receipt,True,972
+null,null,Development,12879,#,null,False,972
+null,null,Lesson 01,12880,https://byui.instructure.com/courses/96/modules/items/12880,receipt,True,973
+null,null,L01 Lesson Notes,12881,https://byui.instructure.com/courses/96/modules/items/12881,receipt,True,973
+null,null,Questions and Conversations,12882,https://byui.instructure.com/courses/96/modules/items/12882,forum,True,973
+null,null,L01 Orientation to Online Learning,12883,https://byui.instructure.com/api/v1/courses/96/module_item_redirect/12883,send,False,973
+null,null,L01 Syllabus Quiz - Directions,12884,https://byui.instructure.com/courses/96/modules/items/12884,receipt,True,973
+null,null,L01 Syllabus Quiz,12885,https://byui.instructure.com/courses/96/modules/items/12885,help,True,973
+null,null,L01 The Business Program Diagram,12886,https://byui.instructure.com/courses/96/modules/items/12886,file_copy,True,973
+null,null,L01 Ice Breaker - Directions,12887,https://byui.instructure.com/courses/96/modules/items/12887,receipt,True,973
+null,null,L01 Ice Breaker,12888,https://byui.instructure.com/courses/96/modules/items/12888,forum,True,973
+null,null,Lesson 02,12889,https://byui.instructure.com/courses/96/modules/items/12889,receipt,True,974
+null,null,L02 Lesson Notes,12890,https://byui.instructure.com/courses/96/modules/items/12890,receipt,True,974
+null,null,Questions and Conversations,12891,https://byui.instructure.com/courses/96/modules/items/12891,forum,True,974
+null,null,L02 Overview,12892,https://byui.instructure.com/courses/96/modules/items/12892,receipt,True,974
+null,null,L02 Steve Davis Webinar,12893,https://byui.instructure.com/courses/96/modules/items/12893,receipt,True,974
+null,null,L02 Weekly Reflection - Directions,12894,https://byui.instructure.com/courses/96/modules/items/12894,receipt,True,974
+null,null,L02 Weekly Reflection,12895,https://byui.instructure.com/courses/96/modules/items/12895,help,True,974
+null,null,Lesson 03,12896,https://byui.instructure.com/courses/96/modules/items/12896,receipt,True,975
+null,null,L03 Lesson Notes,12897,https://byui.instructure.com/courses/96/modules/items/12897,receipt,True,975
+null,null,Questions and Conversations,12898,https://byui.instructure.com/courses/96/modules/items/12898,forum,True,975
+null,null,L03 Overview,12899,https://byui.instructure.com/courses/96/modules/items/12899,receipt,True,975
+null,null,L03 A Disciple Preparation Center Elder David A. Bednar,12900,https://byui.instructure.com/courses/96/modules/items/12900,receipt,True,975
+null,null,L03 President Clark: Selecting a Cluster,12901,https://byui.instructure.com/courses/96/modules/items/12901,receipt,True,975
+null,null,L03 President Clark: Selecting a Major and Minor,12902,https://byui.instructure.com/courses/96/modules/items/12902,receipt,True,975
+null,null,L03 Career Leader Assessment,12903,https://byui.instructure.com/courses/96/modules/items/12903,receipt,True,975
+null,null,L03 Discussion Board - Directions,12904,https://byui.instructure.com/courses/96/modules/items/12904,receipt,True,975
+null,null,L03 Discussion Board,12905,https://byui.instructure.com/courses/96/modules/items/12905,forum,True,975
+null,null,L03 Weekly Reflection - Directions,12906,https://byui.instructure.com/courses/96/modules/items/12906,receipt,True,975
+null,null,L03 Weekly Reflection,12907,https://byui.instructure.com/courses/96/modules/items/12907,help,True,975
+null,null,Lesson 04,12908,https://byui.instructure.com/courses/96/modules/items/12908,receipt,True,976
+null,null,L04 Lesson Notes,12909,https://byui.instructure.com/courses/96/modules/items/12909,receipt,True,976
+null,null,Questions and Conversations,12910,https://byui.instructure.com/courses/96/modules/items/12910,forum,True,976
+null,null,L04 Overview,12911,https://byui.instructure.com/courses/96/modules/items/12911,receipt,True,976
+null,null,L04 Accounting PowerPoint,12912,https://byui.instructure.com/courses/96/modules/items/12912,file_copy,True,976
+null,null,L04 Accounting Industry Outlook,12913,https://byui.instructure.com/courses/96/modules/items/12913,receipt,True,976
+null,null,"L04 A Steady, Upward Course Essay - Directions",12914,https://byui.instructure.com/courses/96/modules/items/12914,receipt,True,976
+null,null,L04 Weekly Reflection - Directions,12915,https://byui.instructure.com/courses/96/modules/items/12915,receipt,True,976
+null,null,L04 Weekly Reflection,12916,https://byui.instructure.com/courses/96/modules/items/12916,help,True,976
+null,null,Lesson 05,12917,https://byui.instructure.com/courses/96/modules/items/12917,receipt,True,977
+null,null,L05 Lesson Notes,12918,https://byui.instructure.com/courses/96/modules/items/12918,receipt,True,977
+null,null,Questions and Conversations,12919,https://byui.instructure.com/courses/96/modules/items/12919,forum,True,977
+null,null,L05 Overview,12920,https://byui.instructure.com/courses/96/modules/items/12920,receipt,True,977
+null,null,L05 Portfolio Part 01,12921,https://byui.instructure.com/courses/96/modules/items/12921,assignment,True,977
+null,null,L05 Information Technology Video,12922,https://byui.instructure.com/courses/96/modules/items/12922,receipt,True,977
+null,null,L05 Lee Barney—CIT Industry Outlook,12923,https://byui.instructure.com/courses/96/modules/items/12923,receipt,True,977
+null,null,L05 Making a Living and a Life Essay,12924,https://byui.instructure.com/courses/96/modules/items/12924,receipt,True,977
+null,null,L05 Weekly Reflection - Directions,12925,https://byui.instructure.com/courses/96/modules/items/12925,receipt,True,977
+null,null,L05 Weekly Reflection,12926,https://byui.instructure.com/courses/96/modules/items/12926,help,True,977
+null,null,Lesson 06,12927,https://byui.instructure.com/courses/96/modules/items/12927,receipt,True,978
+null,null,L06 Lesson Notes,12928,https://byui.instructure.com/courses/96/modules/items/12928,receipt,True,978
+null,null,Questions and Conversations,12929,https://byui.instructure.com/courses/96/modules/items/12929,forum,True,978
+null,null,L06 Overview,12930,https://byui.instructure.com/courses/96/modules/items/12930,receipt,True,978
+null,null,L06 Seth Godin Video,12931,https://byui.instructure.com/courses/96/modules/items/12931,receipt,True,978
+null,null,L06 Kent Lundin & Drew Eagar – Marketing Outlook,12932,https://byui.instructure.com/courses/96/modules/items/12932,receipt,True,978
+null,null,L06 Discussion Board - Directions,12933,https://byui.instructure.com/courses/96/modules/items/12933,receipt,True,978
+null,null,L06 Discussion Board,12934,https://byui.instructure.com/courses/96/modules/items/12934,forum,True,978
+null,null,L06 Weekly Reflection - Directions,12935,https://byui.instructure.com/courses/96/modules/items/12935,receipt,True,978
+null,null,L06 Weekly Reflection,12936,https://byui.instructure.com/courses/96/modules/items/12936,help,True,978
+null,null,L06 Mid-Course Evaluation,12937,https://byui.instructure.com/courses/96/modules/items/12937,help,True,978
+null,null,Lesson 07,12938,https://byui.instructure.com/courses/96/modules/items/12938,receipt,True,979
+null,null,L07 Lesson Notes,12939,https://byui.instructure.com/courses/96/modules/items/12939,receipt,True,979
+null,null,Questions and Conversations,12940,https://byui.instructure.com/courses/96/modules/items/12940,forum,True,979
+null,null,L07 Overview,12941,https://byui.instructure.com/courses/96/modules/items/12941,receipt,True,979
+null,null,L07 Finance PowerPoint,12942,https://byui.instructure.com/courses/96/modules/items/12942,file_copy,True,979
+null,null,L07 James Taylor - Finance Industry Outlook,12943,https://byui.instructure.com/courses/96/modules/items/12943,receipt,True,979
+null,null,L07 Your Whole Soul as an Offering to Him Essay - Directions,12944,https://byui.instructure.com/courses/96/modules/items/12944,receipt,True,979
+null,null,L07 Weekly Reflection - Directions,12945,https://byui.instructure.com/courses/96/modules/items/12945,receipt,True,979
+null,null,L07 Weekly Reflection,12946,https://byui.instructure.com/courses/96/modules/items/12946,help,True,979
+null,null,Lesson 08,12947,https://byui.instructure.com/courses/96/modules/items/12947,receipt,True,980
+null,null,L08 Lesson Notes,12948,https://byui.instructure.com/courses/96/modules/items/12948,receipt,True,980
+null,null,Questions and Conversations,12949,https://byui.instructure.com/courses/96/modules/items/12949,forum,True,980
+null,null,L08 Overview,12950,https://byui.instructure.com/courses/96/modules/items/12950,receipt,True,980
+null,null,L08 How Will You Measure Your Life? - Clayton M. Christensen,12951,https://byui.instructure.com/courses/96/modules/items/12951,receipt,True,980
+null,null,L08 Entrepreneurship,12952,https://byui.instructure.com/courses/96/modules/items/12952,receipt,True,980
+null,null,L08 Entrepreneurship at BYU–Idaho,12953,https://byui.instructure.com/courses/96/modules/items/12953,receipt,True,980
+null,null,L08 Preparation to Start a Business,12954,https://byui.instructure.com/courses/96/modules/items/12954,receipt,True,980
+null,null,L08 How Will You Measure Your Life Essay - Directions,12955,https://byui.instructure.com/courses/96/modules/items/12955,receipt,True,980
+null,null,L08 Industry and Company Analysis - Directions,12956,https://byui.instructure.com/courses/96/modules/items/12956,receipt,True,980
+null,null,L08 Weekly Reflection - Directions,12957,https://byui.instructure.com/courses/96/modules/items/12957,receipt,True,980
+null,null,L08 Weekly Reflection,12958,https://byui.instructure.com/courses/96/modules/items/12958,help,True,980
+null,null,Lesson 09,12959,https://byui.instructure.com/courses/96/modules/items/12959,receipt,True,981
+null,null,L09 Lesson Notes,12960,https://byui.instructure.com/courses/96/modules/items/12960,receipt,True,981
+null,null,Questions and Conversations,12961,https://byui.instructure.com/courses/96/modules/items/12961,forum,True,981
+null,null,L09 Overview,12962,https://byui.instructure.com/courses/96/modules/items/12962,receipt,True,981
+null,null,L09 Bro. Kunzler/ Whitesides,12963,https://byui.instructure.com/courses/96/modules/items/12963,receipt,True,981
+null,null,L09 Global Supply Chain,12964,https://byui.instructure.com/courses/96/modules/items/12964,receipt,True,981
+null,null,L09 B100 True Wealth,12965,https://byui.instructure.com/courses/96/modules/items/12965,file_copy,True,981
+null,null,L09 Discussion Board - Directions,12966,https://byui.instructure.com/courses/96/modules/items/12966,receipt,True,981
+null,null,L09 Discussion Board,12967,https://byui.instructure.com/courses/96/modules/items/12967,forum,True,981
+null,null,L09 Weekly Reflection - Directions,12968,https://byui.instructure.com/courses/96/modules/items/12968,receipt,True,981
+null,null,L09 Weekly Reflection,12969,https://byui.instructure.com/courses/96/modules/items/12969,help,True,981
+null,null,Lesson 10,12970,https://byui.instructure.com/courses/96/modules/items/12970,receipt,True,982
+null,null,L10 Lesson Notes,12971,https://byui.instructure.com/courses/96/modules/items/12971,receipt,True,982
+null,null,Questions and Conversations,12972,https://byui.instructure.com/courses/96/modules/items/12972,forum,True,982
+null,null,L10 Overview,12973,https://byui.instructure.com/courses/96/modules/items/12973,receipt,True,982
+null,null,L10 Submit Portfolio - Directions,12974,https://byui.instructure.com/courses/96/modules/items/12974,receipt,True,982
+null,null,L10 Submit Portfolio,12975,https://byui.instructure.com/courses/96/modules/items/12975,assignment,True,982
+null,null,L10 Weekly Reflection - Directions,12976,https://byui.instructure.com/courses/96/modules/items/12976,receipt,True,982
+null,null,L10 Weekly Reflection,12977,https://byui.instructure.com/courses/96/modules/items/12977,help,True,982
+null,null,Lesson 11,12978,https://byui.instructure.com/courses/96/modules/items/12978,receipt,True,983
+null,null,L11 Lesson Notes,12979,https://byui.instructure.com/courses/96/modules/items/12979,receipt,True,983
+null,null,Questions and Conversations,12980,https://byui.instructure.com/courses/96/modules/items/12980,forum,True,983
+null,null,L11 Overview,12981,https://byui.instructure.com/courses/96/modules/items/12981,receipt,True,983
+null,null,L11 Discussion Board—Directions,12982,https://byui.instructure.com/courses/96/modules/items/12982,receipt,True,983
+null,null,L11 Discussion Board,12983,https://byui.instructure.com/courses/96/modules/items/12983,forum,True,983
+null,null,L11 Key Business Terms Exam,12984,https://byui.instructure.com/courses/96/modules/items/12984,help,True,983
+null,null,Lesson 12,12985,https://byui.instructure.com/courses/96/modules/items/12985,receipt,True,984
+null,null,L12 Lesson Notes,12986,https://byui.instructure.com/courses/96/modules/items/12986,receipt,True,984
+null,null,Questions and Conversations,12987,https://byui.instructure.com/courses/96/modules/items/12987,forum,True,984
+null,null,L12 Overview,12988,https://byui.instructure.com/courses/96/modules/items/12988,receipt,True,984
+null,null,L12: Board of Review,12989,https://byui.instructure.com/courses/96/modules/items/12989,forum,True,984
+null,null,Lesson 13,12990,https://byui.instructure.com/courses/96/modules/items/12990,receipt,True,985
+null,null,L13 Lesson Notes,12991,https://byui.instructure.com/courses/96/modules/items/12991,receipt,True,985
+null,null,Questions and Conversations,12992,https://byui.instructure.com/courses/96/modules/items/12992,forum,True,985
+null,null,L13 Overview,12993,https://byui.instructure.com/courses/96/modules/items/12993,receipt,True,985
+null,null,L13 Board of Review,12994,https://byui.instructure.com/courses/96/modules/items/12994,forum,True,985
+null,null,L13 End of Course Evaluation,12995,https://byui.instructure.com/api/v1/courses/96/module_item_redirect/12995,send,False,985
+null,null,Course Resources,12996,#,null,False,986
+null,null,Academic Support Center,12997,https://byui.instructure.com/api/v1/courses/96/module_item_redirect/12997,send,False,986
+null,null,Library Research Guide - Business,12998,https://byui.instructure.com/api/v1/courses/96/module_item_redirect/12998,send,False,986
+null,null,College of Business and Communication,12999,https://byui.instructure.com/api/v1/courses/96/module_item_redirect/12999,send,False,986
+null,null,Business Terms Study Guide,13000,https://byui.instructure.com/courses/96/modules/items/13000,file_copy,True,986
+null,null,Harvard ManageMentor,13001,https://byui.instructure.com/api/v1/courses/96/module_item_redirect/13001,send,False,986
+null,null,Graduation Planning Tool,13002,https://byui.instructure.com/courses/96/modules/items/13002,file_copy,True,986
+null,null,Selecting a Major and a Minor,13003,https://byui.instructure.com/api/v1/courses/96/module_item_redirect/13003,send,False,986
+null,null,Clusters as Part of an Integrated Degree,13004,https://byui.instructure.com/api/v1/courses/96/module_item_redirect/13004,send,False,986
+null,null,Students Role in the Learning Process,13005,https://byui.instructure.com/api/v1/courses/96/module_item_redirect/13005,send,False,986
+null,null,The Choice—Elder Boyd K. Packer,13006,https://byui.instructure.com/api/v1/courses/96/module_item_redirect/13006,send,False,986
+null,null,Internship and Career Services,13007,https://byui.instructure.com/api/v1/courses/96/module_item_redirect/13007,send,False,986
+null,null,Career Workshop Participant's Workbook,13008,https://byui.instructure.com/courses/96/modules/items/13008,file_copy,True,986
+null,null,Career Related Videos,13009,https://byui.instructure.com/courses/96/modules/items/13009,receipt,True,986
+null,null,Career Websites,13010,https://byui.instructure.com/courses/96/modules/items/13010,receipt,True,986
+null,null,Copyright and Source Info,13011,https://byui.instructure.com/api/v1/courses/96/module_item_redirect/13011,send,False,986
+null,null,Necessary Portfolio Material,13012,#,null,False,986
+null,null,B100 Portfolio Overview and Sample,13013,https://byui.instructure.com/courses/96/modules/items/13013,file_copy,True,986
+null,null,Mentor Interview Form,13014,https://byui.instructure.com/courses/96/modules/items/13014,file_copy,True,986
+null,null,Me in 30 Seconds,13015,https://byui.instructure.com/courses/96/modules/items/13015,receipt,True,986
+null,null,L03 Career Leader Assessment,13016,https://byui.instructure.com/courses/96/modules/items/13016,assignment,True,986
+null,null,Industry and Company Analysis,13017,https://byui.instructure.com/courses/96/modules/items/13017,receipt,True,986
+null,null,LinkedIn Profile,13018,https://byui.instructure.com/courses/96/modules/items/13018,forum,True,986
+null,null,Articles,13019,https://byui.instructure.com/courses/96/modules/items/13019,receipt,True,986
+null,null,Portfolio Overview,13020,https://byui.instructure.com/api/v1/courses/96/module_item_redirect/13020,send,False,986
+null,null,Sample Portfolio,13021,https://byui.instructure.com/courses/96/modules/items/13021,file_copy,True,986

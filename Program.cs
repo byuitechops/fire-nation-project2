@@ -9,12 +9,12 @@ namespace Wololo2
     {
         static public void LoopProperties(JEnumerable<JObject> jEnum)
         {
-            foreach(JObject obj in jEnum)
-                foreach(JProperty prop in obj.Properties())
+            foreach (JObject obj in jEnum)
+                foreach (JProperty prop in obj.Properties())
                 {
-                    if(prop.Name == "title")
+                    if (prop.Name == "title")
                         Console.WriteLine(prop.Value);
-                    else if(prop.Name == "items")
+                    else if (prop.Name == "items")
                         LoopProperties(prop.Value.Children<JObject>());
                 }
         }
@@ -42,7 +42,7 @@ namespace Wololo2
 
             var modName = "";
             var courseID = "96";
-
+;
             var myModObj = new JObject();
             var myItemObj = new JObject();
 
@@ -51,7 +51,8 @@ namespace Wololo2
                 //Console.WriteLine((string)obj.SelectToken("name"));
                 myModObj = new JObject();
                 myModObj.Add(new JProperty("name", obj.SelectToken("name")));
-                
+                myModObj.Add(new JProperty("id", obj.SelectToken("id")));
+
                 foreach (JObject o in obj.SelectToken("items").Children<JObject>())
                 {
                     item.ID = o.SelectToken("id").ToString();
@@ -59,22 +60,32 @@ namespace Wololo2
                     item.Type = o.SelectToken("type").ToString();
                     try
                     {
-                        item.Url = o.SelectToken("url").ToString();
+                        item.Url = o.SelectToken("html_url").ToString();
                     }
                     catch (Exception e)
                     {
-                        try{item.Url = o.SelectToken("external_url").ToString();}
-                        catch(Exception e2){item.Url = "null";}
+                        try { item.Url = o.SelectToken("external_url").ToString(); }
+                        catch (Exception e2) { item.Url = ""; }
                     }
+                    item.ModuleID = o.SelectToken("module_id").ToString();
                     item.Published = o.SelectToken("published").ToString();
                     items.Add(item);
                     item = new Item();
                 }
+                //Console.WriteLine(myModObj.SelectToken("name"));
+
+                /* foreach (var mod in myModObj)
+                {
+                    Console.WriteLine(mod.Value);
+                } */
             }
-                
-            
+
+            //myModObj.Add(new JProperty("items", items));
+            Html html = new Html();
+            html.Convert(items);
+
+
             return items;
         }
     }
 }
-

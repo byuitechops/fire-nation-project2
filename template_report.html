@@ -2,81 +2,46 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <title>Module Report</title>
-  <style>
-    .report {
-      margin: 1rem;
-    }
+    <title>Module Report</title>
+    <style>
+        .report {
+            margin: 1rem;
+        }
 
-    .card {
-      margin: 1rem;
-    }
-    .card-header {
-      font-weight: bold;
-      background-color: rgb(5, 108, 182);
-      color: #FFFFFF;
-    }
+        .card {
+            margin: 1rem;
+        }
 
-    h1 {
-      margin: 1rem;
-    }
+        .card-header {
+            font-weight: bold;
+            font-size: 1.3rem;
+            background-color: rgb(5, 108, 182);
+            color: #FFFFFF;
+        }
 
-    #type {
-      float: right;
-    }
-  </style>
+        h1 {
+            margin: 1rem;
+        }
+
+        #type {
+            float: right;
+        }
+        a {
+          color: black;
+        }
+
+        .list-group-item {
+            font-weight: bold;
+        }
+        
+    </style>
 </head>
-
-<body>
-  <!--Set the name of the course-->
-  <h1>Module Items for <span id="course">${ID OF COURSE}</span></h1>
-<!-- The report div holds all the items of the report -->
-  <div class="report">
-    <!-- For every module, dynamically create on of these cards-->
-    <div class="card" style="width: 50rem;">
-      <!-- Set the name card header to the name of the module-->
-      <div class="card-header">
-        Week 01
-      </div>
-      <!-- For each of the module items, make a new list-group-item with the item name with its type-->
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">Cras justo odio<span id="type"><i class="material-icons">file_copy</i></span></li>
-        <li class="list-group-item">Dapibus ac facilisis in<span id="type"><i class="material-icons">forum</i></span></li>
-        <li class="list-group-item">Vestibulum at erosd d hdfr <span id="type"><i class="material-icons">assignment</i></span></li>
-        <li class="list-group-item">Vestibulum at eros<span id="type"><i class="material-icons">help</i></span></li>
-        <li class="list-group-item">Vestibulum at eros asdf sd5r f <span id="type"><i class="material-icons">open_in_new</i></span></li>
-
-      </ul>
-    </div>
-  </div>
-
-
-    <h3>Icon Key</h3>
-    <p>'File', <i class="material-icons">file_copy</i><br> 
-    'Discussion', <i class="material-icons">forum</i><br>
-    'Assignment', <i class="material-icons">assignment</i><br>
-    'Quiz', <i class="material-icons">help</i><br>
-    'ExternalTool' <i class="material-icons">open_in_new</i><br>
-
-
-</body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-</script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-</script>
-</html>

@@ -7,4 +7,5 @@ class Item
             public string Url {get;set;}
             public string Type {get;set;}
             public string Published {get;set;}
+            public string ModuleID {get;set;}
         }
