@@ -11,11 +11,10 @@ namespace Wololo2
     {
         static void Main(string[] args)
         {
-            string ID = Prompt("Enter a course ID:"); // Implement Input
-            string Opt = Prompt("Output type: (CSV, HTML, JSON)?");
+            Input.GetDataFromFile();
 
             IData httpGet = new HttpGet(); // Dependancy inject
-            string data = httpGet.GetData("https://byui.instructure.com/api/v1/courses/" + ID + "/modules?include[]=items&per_page=32").Result; // Implement better params
+            string data = httpGet.GetData(ID).Result; // Implement better params
 
             IConverter converter = new Json(); // Dependancy inject
             JArray moreData = JArray.Parse(data); // Put into some feature???

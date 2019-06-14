@@ -4,6 +4,6 @@ namespace Wololo2
 {
     interface IData
     {
-        Task<string> GetData(string where);
+        Task<string> GetData(string ID);
     }
 }
