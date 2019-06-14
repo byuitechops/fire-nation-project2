@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using Newtonsoft.Json.Linq;
 
 namespace Wololo2
@@ -30,4 +29,5 @@ namespace Wololo2
             return path;
         }
     }
+
 }
