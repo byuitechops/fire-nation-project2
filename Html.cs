@@ -79,7 +79,7 @@ namespace Wololo2
 
         public string htmlConverter(JArray course)
         {
-            string courseID = (string)course.First.SelectToken("name");
+            string courseID = (string)course.First.SelectToken("courseID");
 
             string html = "<body><h1>Module Items for course " + courseID + "</h1><div class=\"report\">";
 
