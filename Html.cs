@@ -99,6 +99,7 @@ namespace Wololo2
                     string pub = "";
                     string subStyle = "";
                     if (type == "ExternalUrl") type = "send";
+                    if (type == "ExternalTool") type = "open_in_new";
                     if (type == "File") type = "file_copy";
                     if (type == "Discussion") type = "forum";
                     if (type == "Quiz") type = "help";
