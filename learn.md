@@ -5,15 +5,15 @@ This project is going to expand your knowledge on C# by making an API call to ge
 
 ### Learning and Prep
 To help you further your growth in the world of C# and Object Oriented Programming, learn about the following:
- - [ ] Have an understanding about Interfaces
- - [ ] Understand how to use Inheritance
- - [ ] Generics in C#
- - [ ] Learn about Dependency Injection
- - [ ] Testing 
-   - [ ] Unit Testing
-   - [ ] E2E (End-to-End) Testing 
-- [ ] Have an understanding about the S.O.L.I.D design principles
-- [ ] Have an understanding about Clean Architechture
+ - [ ] Have an understanding about [Interfaces](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/interface)
+ - [ ] Understand how to use [Inheritance](https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/inheritance)
+ - [ ] [Generics in C#](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/generic-type-parameters)
+ - [ ] Learn about [Dependency Injection](https://www.freecodecamp.org/news/a-quick-intro-to-dependency-injection-what-it-is-and-when-to-use-it-7578c84fa88f/)
+ - [ ] [Testing](https://codeahoy.com/2016/07/05/unit-integration-and-end-to-end-tests-finding-the-right-balance/)
+   - [ ] [Unit Testing](https://app.pluralsight.com/player?course=csharp-fundamentals-dev&author=scott-allen&name=1611b295-37f9-4471-8f7d-a50b9fdfc1de&clip=0) (The link refers the Plural Sight Videos about testing)
+   - [ ] [E2E (End-to-End) Testing](https://www.guru99.com/end-to-end-testing.html)
+- [ ] Have an understanding about the [S.O.L.I.D design principles](https://en.wikipedia.org/wiki/SOLID)
+- [ ] Have an understanding about [Clean Architechture](https://www.freecodecamp.org/news/a-quick-introduction-to-clean-architecture-990c014448d2/)
 - [ ] Breifly review and install [BootStrap](https://getbootstrap.com/)
  
 ### Project Insturctions
