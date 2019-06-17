@@ -79,7 +79,7 @@ namespace Wololo2
 
         public string htmlConverter(JArray course)
         {
-            string courseID = (string)course.First.SelectToken("name");
+            string courseID = (string)course.First.SelectToken("courseID");
 
             string html = "<body><h1>Module Items for course " + courseID + "</h1><div class=\"report\">";
 
@@ -99,6 +99,7 @@ namespace Wololo2
                     string pub = "";
                     string subStyle = "";
                     if (type == "ExternalUrl") type = "send";
+                    if (type == "ExternalTool") type = "open_in_new";
                     if (type == "File") type = "file_copy";
                     if (type == "Discussion") type = "forum";
                     if (type == "Quiz") type = "help";
