@@ -8,6 +8,3 @@ csv.csv
 unitTests.cs
 Module.Tests.csproj
 module-getter.csproj
-config.txt
-Program.cs
-Html.cs
