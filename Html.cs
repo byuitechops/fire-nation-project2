@@ -89,8 +89,22 @@ namespace Wololo2
                 html += $"<div class=\"card\" style=\"width: 50rem;\"><div class=\"card-header\">{modName}</div><ul class=\"list-group list-group-flush\">";
 
                 JArray items = (JArray)module.SelectToken("items");
+
+                //Console.WriteLine(items.ToString() + "IM TO STRINGED");
+
+                if (items.ToString() == "[]")
+                {
+                    html += $"<li class=\"list-group-item empty-items\">" + "THIS MODULE DOESN'T HAVE ANY ITEMS"+ "<i class=\"material-icons\"></i></li>\n";                                        
+                }
+
                 foreach (var item in items.Children<JObject>())
                 {
+
+
+                    if (item.ToString() == "")
+                    {
+                        Console.WriteLine((string)module.SelectToken("name") + "IM EMPTY");
+                    }
                     //Console.WriteLine((string)item.SelectToken("Type"));
                     string name = (string)item.SelectToken("Name");
                     string type = (string)item.SelectToken("Type");

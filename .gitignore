@@ -4,7 +4,6 @@ obj/
 bin/
 json.json
 csv.csv
+modules.csproj
 .vscode/
-unitTests.cs
-Module.Tests.csproj
-module-getter.csproj
+reprot.html
