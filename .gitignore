@@ -5,3 +5,9 @@ bin/
 json.json
 csv.csv
 .vscode/
+unitTests.cs
+Module.Tests.csproj
+module-getter.csproj
+config.txt
+Program.cs
+Html.cs
