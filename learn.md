@@ -16,10 +16,10 @@ To help you further your growth in the world of C# and Object Oriented Programmi
 - [ ] Have an understanding about [Clean Architechture](https://www.freecodecamp.org/news/a-quick-introduction-to-clean-architecture-990c014448d2/)
 - [ ] Breifly review and install [BootStrap](https://getbootstrap.com/)
  
-### Project Insturctions
+### Project Instructions
 With dependency injection in mind, make an authenticated `GET` request to Canvas to get a list of courses modules and their module items. With the response from the `GET` request, generate a report to show the data. The report could be a CSV file, JSON file, or a HTML file. The user will be able to choose their desired output report. The report should include each module, module item, id, url, type, and if published. As far as the HTML report goes, don't spend lots of time designing and styling a fancy website to hold a data. Please do make it look good however, using elements from BootStrap. With HTML in mind, please also don't create external styling sheets or script files, the report should be ONE HTML file that Josh can email and the end user can open it right up to see. When designing how to make an HTML report you can experiment with HTML templating, concatenation, or even string interpolation. Additionaly, add testing to your project. Make sure you include unit testing as well as (E2E) End-to-End testing.
 
-### Review of instructions 
+### Review of Instructions 
 - [ ] Make a `GET` Request to Canvas to get a list of courses modules and their module items.
 - [ ] Generate one of three reports of the data
   - [ ] A CSV of the modules items
